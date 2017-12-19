@@ -1,0 +1,97 @@
+@import "~themes/vars";
+
+.section {
+  overflow: hidden;
+  width: 240px;
+  height: 339px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+
+  & .customImage img {
+    display: block;
+    width: 238px;
+    height: 238px;
+  }
+  & .customCard h3{
+    font-size: 16px;
+    margin-left: 10px;
+    padding-top: 10px;
+    .text-overflow
+  }
+  & .customCard p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+    color: #f00;
+  }
+}
+
+
+
+
+
+
+.main {
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 10px;
+  border-radius: 5px;
+  float: left;
+
+  -webkit-animation: sky_background 10s ease-out infinite;
+  -moz-animation: sky_background 10s ease-out infinite;
+  -o-animation: sky_background 10s ease-out infinite;
+  animation: sky_background 10s ease-out infinite;
+}
+  @-webkit-keyframes sky_background {
+    0% {
+      border-color: #f00;
+      color: #f0f
+    }
+    50% {
+      border-color: #f0f;
+      color: #0ff
+    }
+    100% {
+      border-color: #00f;
+      color: #f00
+    }
+  }
+  @-moz-keyframes sky_background {
+    0% {
+      border-color: #f00;
+      color: #f0f
+    }
+    50% {
+      border-color: #f0f;
+      color: #0ff
+    }
+    100% {
+      border-color: #00f;
+      color: #f00
+    }
+  }
+  @keyframes sky_background {
+    0% {
+      border-color: #f00;
+      color: #f0f
+    }
+    50% {
+      border-color: #f0f;
+      color: #0ff
+    }
+    100% {
+      border-color: #00f;
+      color: #f00
+    }
+  }
+  .page {
+    float: right;
+    //margin-top: 100px;
+  }
+

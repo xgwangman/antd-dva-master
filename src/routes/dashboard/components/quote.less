@@ -1,0 +1,53 @@
+@import "~themes/vars";
+
+.quote {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 700;
+
+  .inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    display: -webkit-box;
+    //display: -moz-box;  //兼容火狐，但是在火狐中只能在一行溢出隐藏显示省略号
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-indent: 24px;
+
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 14px;
+
+    .description {
+      width: 100%;
+
+      p {
+
+        .text-overflow;
+        margin-right: 64px;
+        text-align: right;
+
+        &:last-child {
+          font-weight: 100;
+        }
+      }
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
