@@ -22,4 +22,4 @@ app.model(require('./models/app'))
 app.router(require('./router'))
 
 // 4. Start
-app.start('#root')
+app.start('#root')123
